@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mine Bacha❤️‍🩹</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+padding: 50px;
+background-color: #fef7f7;
+margin: 0;
+}
+
+h1 {
+font-size: 36px;
+cursor: pointer;
+}
+
+.heart {
+display: none;
+font-size: 100px;
+color: red;
+transition: transform 0.5s ease;
+}
+
+.heart:hover {
+transform: scale(1.1);
+}
+
+.message {
+display: none;
+font-size: 18px;
+color: #333;
+margin-top: 20px;
+}
+
+.song {
+display: none;
+}
+</style>
+</head>
+<body>
+<h1 id="title">Mine Bacha❤️‍🩹</h1>
+<div id="heart" class="heart">❤️</div>
+<p id="message" class="message"></p>
+<audio id="song" class="song" loop>
+<source src="your_song_url_here.mp3" type="audio/mp3">
+</audio>
+
+<script>
+const title = document.getElementById('title');
+const heart = document.getElementById('heart');
+const message = document.getElementById('message');
+const song = document.getElementById('song');
+
+// When title is clicked, show heart and play song
+title.addEventListener('click', () => {
+heart.style.display = 'inline';
+song.play();
+});
+
+// When heart is clicked, display message
+heart.addEventListener('click', () => {
+message.style.display = 'block';
+message.innerHTML = "Love you always bacha🥺❤️‍🩹";
+});
+</script>
+</body>
+</html>
